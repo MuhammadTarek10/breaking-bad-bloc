@@ -9,7 +9,7 @@ class BreakingBadApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       onGenerateRoute: RouteGenerator.generateRoute,
-      initialRoute: Routes.charachtersRoute,
+      initialRoute: Routes.charactersRoute,
     );
   }
 }

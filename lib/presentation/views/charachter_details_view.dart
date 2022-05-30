@@ -1,8 +1,8 @@
 import 'package:breaking_bad/presentation/resources/color_manager.dart';
 import 'package:flutter/material.dart';
 
-class CharachterDetailsView extends StatelessWidget {
-  const CharachterDetailsView({Key? key}) : super(key: key);
+class CharacterDetailsView extends StatelessWidget {
+  const CharacterDetailsView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

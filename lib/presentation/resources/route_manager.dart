@@ -4,17 +4,17 @@ import 'package:flutter/material.dart';
 
 class Routes {
   static const String splashRoute = '/';
-  static const String charachtersRoute = '/characters';
-  static const String charachterDetailsRoute = '/charachterDetails';
+  static const String charactersRoute = '/characters';
+  static const String characterDetailsRoute = '/characterDetails';
 }
 
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
-      case Routes.charachtersRoute:
-        return MaterialPageRoute(builder: (_) => const CharachtersView());
-      case Routes.charachterDetailsRoute:
-        return MaterialPageRoute(builder: (_) => const CharachterDetailsView());
+      case Routes.charactersRoute:
+        return MaterialPageRoute(builder: (_) => const CharactersView());
+      case Routes.characterDetailsRoute:
+        return MaterialPageRoute(builder: (_) => const CharacterDetailsView());
       default:
         return unDefinedRoute();
     }

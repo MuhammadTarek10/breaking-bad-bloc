@@ -17,6 +17,10 @@ CharacterResponse _$CharacterResponseFromJson(Map<String, dynamic> json) =>
       json['nickname'] as String?,
       (json['appearance'] as List<dynamic>?)?.map((e) => e as int).toList(),
       json['portrayed'] as String?,
+      json['category'] as String?,
+      (json['better_call_saul_appearance'] as List<dynamic>?)
+          ?.map((e) => e as int)
+          .toList(),
     );
 
 Map<String, dynamic> _$CharacterResponseToJson(CharacterResponse instance) =>
@@ -30,6 +34,8 @@ Map<String, dynamic> _$CharacterResponseToJson(CharacterResponse instance) =>
       'nickname': instance.nickname,
       'appearance': instance.appearance,
       'portrayed': instance.portrayed,
+      'category': instance.category,
+      'better_call_saul_appearance': instance.betterCallSaulAppearance,
     };
 
 AllCharactersResponse _$AllCharactersResponseFromJson(

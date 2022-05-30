@@ -21,6 +21,11 @@ class CharacterResponse {
   List<int>? appearance;
   @JsonKey(name: "portrayed")
   String? portrayed;
+  @JsonKey(name: "category")
+  String? category;
+  @JsonKey(name: "better_call_saul_appearance")
+  List<int>? betterCallSaulAppearance;
+
 
   CharacterResponse(
     this.id,
@@ -32,6 +37,8 @@ class CharacterResponse {
     this.nickname,
     this.appearance,
     this.portrayed,
+    this.category,
+    this.betterCallSaulAppearance,
   );
 
   factory CharacterResponse.fromJson(Map<String, dynamic> json) =>
